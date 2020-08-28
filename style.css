@@ -1,0 +1,129 @@
+
+
+
+
+* {/*Affects all elements*/
+   /*Setting default margins and paddings to 0*/
+    
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+    /*Used to prevent the yellow box from floating along with the green box*/
+}
+
+body {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    
+}
+h1, h2 {
+    
+    color: #03ff03; /*Sets colour to green*/
+    font-family: Arial, helvetica, sans-serif;/*Font style*/
+}
+
+
+h1{    
+    font-size: 40px;/*Sets font size*/
+    
+    /*Adding margin at the bottom of h1*/
+    
+    margin-bottom: 20px;
+}
+
+h2 {
+    /*same as h1 except font size*/
+    font-size: 25px;/*Sets font size*/
+    
+    margin-bottom: 10px;
+}
+
+.main-text {    
+    text-align: justify;
+    
+    margin-bottom: 20px;
+}
+
+#author-text {
+    /*This is an ID.*/
+    font-size: 22px;
+    float: left;
+    
+    margin-top: 35px;
+    margin-left: 10px;
+    
+}
+
+
+.container {
+    width: 1148px;
+    margin-left: auto;
+    margin-right: auto;
+    /*Auto means these margine adjusted autmatically according to context of the element*/
+    /*This centers the webpage automatically*/
+    
+    margin-top: 20px;
+    
+    /*Helps space the browser window and our container*/
+}
+
+.blog-post {
+/*    background-color: #0000ff;*/
+    /*You can uncomment the bg colors to see the divisions*/
+    width: 75%;
+    float:left;
+    /*With float an element can be pushed to the left or to the right allowing other elements to wrap around it*/
+    /*We use float to put block elements side by side*/
+    
+    padding-right: 30px;
+    /*Gives space but inside the box*/
+    position: relative;
+}
+
+.other-posts {
+/*    background-color: #00ff00;*/
+    width: 25%;
+    float: left;
+}
+
+.author-box {
+/*    background-color: #ffff00;*/
+    
+    /*We can add a line to separate the author box using border. Solid means solid line*/
+    
+    border-top: 1px solid #585858;
+    
+    padding-top: 20px;
+}
+
+.other {
+    margin-bottom: 40px;
+}
+
+.author-box img /*This selects the images inside author box*/{
+    height: 100px;
+    width: 100px;
+    
+    border-radius: 50%;/*Makes image round*/
+    
+    float: left;
+}
+
+.blog-post img {
+    height: 150px;
+    width: auto;
+}
+
+.date {
+    position: absolute;
+    top: 10px;/*Right at the top with 0 px*/
+    right: 30px;
+}
